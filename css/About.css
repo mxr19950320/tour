@@ -1,0 +1,332 @@
+/* 
+* @Author: Marte
+* @Date:   2017-12-21 15:03:31
+* @Last Modified by:   Marte
+* @Last Modified time: 2018-01-11 18:26:13
+*/
+html{
+    font-size: 62.5%;
+    color: #222;
+}
+::selection {
+    background-color: #b3d4fc;
+    text-shadow: none;
+}
+ul {
+    margin: 0;
+    padding: 0;
+}
+li {
+    list-style: none;
+}
+.center-block {
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+}
+.pull-right {
+    float: right !important;
+}
+.pull-left {
+    float: left !important;
+}
+
+.text-right {
+    text-align: right !important;
+}
+
+.text-left {
+    text-align: left !important;
+}
+
+.text-center {
+    text-align: center !important;
+}
+
+.hide {
+    display: none !important;
+}
+
+.show {
+    display: block !important;
+}
+
+.invisible {
+    visibility: hidden;
+}
+
+.text-hide {
+    font: 0/0 a;
+    color: transparent;
+    text-shadow: none;
+    background-color: transparent;
+    border: 0;
+}
+
+.clearfix:before,
+.clearfix:after {
+    content: " ";
+    display: table;
+}
+
+.clearfix:after {
+    clear: both;
+}
+/* ===============
+   浏览器更新提示
+   =============== */
+
+.browserupgrade {
+    margin: 0;
+    padding: 1rem;
+    background: #ccc;
+}
+/* ===============
+   自定义页面样式
+   =============== */
+ body {
+    font-size: 1.2rem;
+    background-color: white;
+ }
+ a {
+    color: #666;
+    text-decoration: none;
+ }
+ 
+ a:hover, a:active {
+    color: #0ae;
+    text-decoration: underline;
+ }
+/* 网站头部 */
+header {
+    width: 80%;
+    margin: 0 auto;
+}
+header .main {
+    background: rgb(50,58,69);
+    border-bottom: 2px rgb(0,184,149) solid;
+}
+header .main .brand {
+  float: left;
+  padding: 0.8rem 3.5rem;
+}
+header .main ul {
+     text-align: right;
+     padding-right: 3.5rem;
+}
+header .main ul li {
+    display: inline-block;
+    list-style-type: none;
+    margin-left: -0.46rem;
+    width: 7rem;
+    text-align: center;
+}
+header .main ul li a {
+    display: inline-block;
+    font-size: 1.5rem;
+    color: white;
+    text-decoration: none;
+    background-color:rgb(50,58,69);
+    line-height: 5.5rem;
+}
+header ul li a:link{}
+header ul .active a:visited,
+header ul .active {background-color: rgb(0,184,149);}
+header ul li a:active{}
+header ul li a:hover{
+background-color: rgb(0,184,149);
+width: 7rem; 
+}
+@media only screen and (max-width: 1100px) {
+
+    header .main .brand {
+        float: none;
+        display: block;
+        padding: 0;
+        text-align: center;
+    }
+    header .main ul {
+        text-align: center;
+        padding: 0;
+    }
+}
+.container {
+  width: 80%;
+  margin: 0 auto;
+}
+.ad1 {
+  width: 100%;
+  margin: 1.5rem auto;
+  background-color: rgb(255,255,255);
+}
+.ad1 h1 {
+   margin: 3rem;
+   text-align: center;
+   color: rgb(50,58,69);
+   font-family: "宋体";
+   font-size: 3rem;
+}
+.ad1 .item1 {
+  text-align: center;
+  margin-top: -5.3rem;
+}
+.ad1 .item1 img {
+  max-width: 100%;
+}
+.ad1 .item2 {
+    margin-top: 3.5rem;
+}
+.ad1 .item2 h3 {
+   text-align: left;
+   color: rgb(0,184,149);
+   font-family: "宋体";
+   font-size: 1.8rem;
+}
+.ad1 .item2 p {
+  display: block;
+  margin-top: 1rem;
+  text-align: left;
+  line-height: 2rem;
+  font-size: 1rem;
+  color: rgb(50,58,69);
+}
+.ad2 {
+  max-width: 100%;
+  margin: 0 auto;
+  background-color: rgb(237, 234, 230);
+}
+.ad2 .item3 {
+  text-align: center;
+}
+.ad2 h1 {
+  text-align: center;
+  color: rgb(108, 108, 109);
+  margin-top: -3rem; 
+}
+.ad2 .item4 {
+  text-align: center;
+  margin-top: -3.4rem;
+}
+.ad2 .item4 img {
+  max-width: 100%;
+}
+.ad2 .item5 {
+  display: inline-block;
+  margin: 4.5rem 0.3rem;
+  width: 350px;
+  height: 144px;
+}
+.ad2 .item5 img {
+  max-width: 350px;
+  opacity: 1;
+}
+.ad2 .item5:hover {
+  transition: all 1s ease-in-out;
+  transform: scalex(1.1);
+}
+.ad2 .item5 span {
+  display: block;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0,184,149,0.5) ;
+  margin-top: -146px;
+  margin-left: 0;
+  opacity: 0;
+  transition: all 1s ease-in-out;
+  text-align: center;
+  color: white;
+  font-size: 2.2rem;
+}
+.ad2 .item5:hover img {
+  opacity: 0;
+}
+.ad2 .item5:hover span {
+  opacity: 1;
+}
+
+.ad2 h2,p {
+  text-align: center;
+  color: rgb(108, 108, 109);
+}
+@media only screen and (max-width: 1300px) {
+    .ad2 {
+      text-align: center;
+      float: none;
+      display: block;
+    }
+  }
+  @media only screen and (max-width: 800px) {
+    .ad2 .item8 {
+      text-align: center;
+      float: none;
+      display: block;
+    }
+}
+.ad3 {
+  max-width: 100%;
+  margin: 2rem auto;
+  background-color: rgb(255, 255, 255);
+}
+.ad3 h1,p {
+  text-align: center;
+}
+.ad3 h2 {
+  text-align: center;
+  color: rgb(69,179,158); 
+}
+/* 底部导航 */
+.item6 {
+  text-align: center;
+}
+.item6 img {
+  width: 8%;
+}
+.footer {
+    margin: -0.2rem auto;
+    max-width: 100%;
+    background-color: rgb(69,179,158);
+}
+
+.footer .footer-content {
+    width: 90%;
+    margin: 0 auto;
+}
+.footer .footer-content ul {
+    float: left;
+    margin: 2.5rem 2.6rem;
+}
+.footer .footer-content ul li a {
+    line-height: 2rem;
+    color: white;
+    text-decoration: none;
+}
+.footer .footer-content ul li.title {
+    font-size: 1.6rem;
+    line-height: 3rem;
+    color: white;
+    margin-bottom: 0.5rem;
+}
+.footer .footer-content ul li a:hover,
+.footer .footer-content ul li a:active {
+     color: black;
+}
+@media only screen and (max-width: 1000px) {
+    .footer .footer-content ul {
+      text-align: center;
+      float: none;
+      display: block;
+    }
+  }
+footer {
+    width: 80%;
+    margin: 0 auto;
+}
+footer .main1 {
+  background-color: rgb(50,58,69);
+}
+footer .main1 p {
+  font-size: 1.3rem;
+  color: white;
+  line-height: 3rem;
+}
+
